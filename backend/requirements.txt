@@ -1,0 +1,32 @@
+# ==========================
+# AI Job Market Intelligence Platform
+# Backend Requirements
+# ==========================
+
+# Web Framework
+fastapi
+uvicorn[standard]
+
+# Database
+sqlalchemy
+psycopg[binary]
+alembic
+
+# Configuration
+pydantic-settings
+python-dotenv
+
+# Logging
+loguru
+
+# Data Validation
+pydantic
+
+# Testing
+pytest
+
+# HTTP Client
+httpx
+
+# Utilities
+python-multipart
