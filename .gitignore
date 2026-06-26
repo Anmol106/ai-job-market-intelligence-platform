@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# =====================================
+# AI Job Market Intelligence Platform
+# =====================================
+
+# Backend virtual environment
+backend/.venv/
+
+# Backend environment variables
+backend/.env
+
+# Keep template environment file
+!backend/.env.example
+
+# macOS
+.DS_Store
+
+# VS Code Workspace
+.vscode/
+
+# Python cache
+backend/**/__pycache__/
+backend/**/*.pyc
