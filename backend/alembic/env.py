@@ -22,9 +22,6 @@ if config.config_file_name is not None:
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 target_metadata = Base.metadata
-print("DEBUG target_metadata:", target_metadata)
-print("DEBUG tables:", list(target_metadata.tables.keys()))
-
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
@@ -73,7 +70,6 @@ def run_migrations_online() -> None:
     )
 
     with connectable.connect() as connection:
-        print("DEBUG before configure:", target_metadata)
         context.configure(
             connection=connection, target_metadata=target_metadata
         )
